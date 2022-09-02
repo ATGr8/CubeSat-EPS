@@ -1,0 +1,1054 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A0 46811 33110
+encoding utf-8
+Sheet 1 2
+Title "Atharva-EPS"
+Date "2022-08-27"
+Rev "1.0"
+Comp ""
+Comment1 "Atharva Kulkarni"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell BT3
+U 1 1 630AA385
+P 1725 1940
+F 0 "BT3" H 1843 2036 50  0000 L CNN
+F 1 "Battery_Cell" H 1843 1945 50  0000 L CNN
+F 2 "" V 1725 2000 50  0001 C CNN
+F 3 "~" V 1725 2000 50  0001 C CNN
+	1    1725 1940
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 900  2100 900 
+Wire Wire Line
+	2100 900  2100 800 
+$Comp
+L Regulator_Linear:MAX1615xUK U1
+U 1 1 630AB8E9
+P 4350 900
+F 0 "U1" H 4350 1267 50  0000 C CNN
+F 1 "MAX1615xUK" H 4350 1176 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4350 650 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1615-MAX1616.pdf" H 4350 650 50  0001 C CNN
+	1    4350 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MAX1615xUK U2
+U 1 1 630AC919
+P 4313 2907
+F 0 "U2" H 4313 3274 50  0000 C CNN
+F 1 "MAX1615xUK" H 4313 3183 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4313 2657 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1615-MAX1616.pdf" H 4313 2657 50  0001 C CNN
+	1    4313 2907
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 800  3600 800 
+Wire Wire Line
+	3950 1000 3850 1000
+Wire Wire Line
+	3850 1000 3850 800 
+Connection ~ 3850 800 
+Wire Wire Line
+	3850 800  3950 800 
+$Comp
+L power:GND #PWR0102
+U 1 1 630AF7BA
+P 4350 1200
+F 0 "#PWR0102" H 4350 950 50  0001 C CNN
+F 1 "GND" H 4355 1027 50  0000 C CNN
+F 2 "" H 4350 1200 50  0001 C CNN
+F 3 "" H 4350 1200 50  0001 C CNN
+	1    4350 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 800  3600 1050
+Connection ~ 3600 800 
+Wire Wire Line
+	3600 800  3850 800 
+$Comp
+L Device:CP C2
+U 1 1 630AFD02
+P 3600 1200
+F 0 "C2" H 3718 1246 50  0000 L CNN
+F 1 "0.1uF" H 3718 1155 50  0000 L CNN
+F 2 "" H 3638 1050 50  0001 C CNN
+F 3 "~" H 3600 1200 50  0001 C CNN
+	1    3600 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 630B04AA
+P 3600 1350
+F 0 "#PWR0103" H 3600 1100 50  0001 C CNN
+F 1 "GND" H 3605 1177 50  0000 C CNN
+F 2 "" H 3600 1350 50  0001 C CNN
+F 3 "" H 3600 1350 50  0001 C CNN
+	1    3600 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 800  4850 800 
+Wire Wire Line
+	4750 1000 4850 1000
+Wire Wire Line
+	4850 1000 4850 800 
+Connection ~ 4850 800 
+Wire Wire Line
+	2100 800  1050 800 
+Connection ~ 2100 800 
+Wire Wire Line
+	3913 3007 3763 3007
+Wire Wire Line
+	3763 3007 3763 2807
+Connection ~ 3763 2807
+Wire Wire Line
+	3763 2807 3913 2807
+$Comp
+L Device:CP C1
+U 1 1 630B4A72
+P 3463 3006
+F 0 "C1" H 3581 3052 50  0000 L CNN
+F 1 "0.1uF" H 3581 2961 50  0000 L CNN
+F 2 "" H 3501 2856 50  0001 C CNN
+F 3 "~" H 3463 3006 50  0001 C CNN
+	1    3463 3006
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 630B4A78
+P 3463 3157
+F 0 "#PWR0104" H 3463 2907 50  0001 C CNN
+F 1 "GND" H 3468 2984 50  0000 C CNN
+F 2 "" H 3463 3157 50  0001 C CNN
+F 3 "" H 3463 3157 50  0001 C CNN
+	1    3463 3157
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3463 2856 3463 2807
+Wire Wire Line
+	3463 2807 3763 2807
+$Comp
+L power:GND #PWR0105
+U 1 1 630B568F
+P 4313 3207
+F 0 "#PWR0105" H 4313 2957 50  0001 C CNN
+F 1 "GND" H 4318 3034 50  0000 C CNN
+F 2 "" H 4313 3207 50  0001 C CNN
+F 3 "" H 4313 3207 50  0001 C CNN
+	1    4313 3207
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 630B5DE9
+P 4713 3007
+F 0 "#PWR0106" H 4713 2757 50  0001 C CNN
+F 1 "GND" H 4718 2834 50  0000 C CNN
+F 2 "" H 4713 3007 50  0001 C CNN
+F 3 "" H 4713 3007 50  0001 C CNN
+	1    4713 3007
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4713 2807 5056 2807
+Wire Notes Line
+	487  2589 487  2597
+Text Notes 546  725  0    79   ~ 0
+Voltage Regulation \n
+Wire Wire Line
+	2099 801  2100 646 
+$Comp
+L Device:CP C4
+U 1 1 630C4339
+P 5159 1208
+F 0 "C4" H 5277 1254 50  0000 L CNN
+F 1 "6.8uF" H 5277 1163 50  0000 L CNN
+F 2 "" H 5197 1058 50  0001 C CNN
+F 3 "~" H 5159 1208 50  0001 C CNN
+	1    5159 1208
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 630C433F
+P 5159 1358
+F 0 "#PWR0107" H 5159 1108 50  0001 C CNN
+F 1 "GND" H 5164 1185 50  0000 C CNN
+F 2 "" H 5159 1358 50  0001 C CNN
+F 3 "" H 5159 1358 50  0001 C CNN
+	1    5159 1358
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 800  5159 800 
+Wire Wire Line
+	5159 800  5159 1058
+Connection ~ 5159 800 
+Wire Wire Line
+	5056 2807 5057 2931
+$Comp
+L Device:CP C3
+U 1 1 630C994E
+P 5057 3081
+F 0 "C3" H 5175 3127 50  0000 L CNN
+F 1 "6.8uF" H 5175 3036 50  0000 L CNN
+F 2 "" H 5095 2931 50  0001 C CNN
+F 3 "~" H 5057 3081 50  0001 C CNN
+	1    5057 3081
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 630C9954
+P 5057 3231
+F 0 "#PWR0108" H 5057 2981 50  0001 C CNN
+F 1 "GND" H 5062 3058 50  0000 C CNN
+F 2 "" H 5057 3231 50  0001 C CNN
+F 3 "" H 5057 3231 50  0001 C CNN
+	1    5057 3231
+	1    0    0    -1  
+$EndComp
+Connection ~ 5056 2807
+Wire Wire Line
+	5056 2807 5155 2806
+$Comp
+L Connector_Generic:Conn_02x26_Odd_Even J2
+U 1 1 630DC53C
+P 10220 1721
+AR Path="/630DC53C" Ref="J2"  Part="1" 
+AR Path="/602E25D3/630DC53C" Ref="J?"  Part="1" 
+F 0 "J2" H 10195 196 50  0000 L CNN
+F 1 "Conn_02x26_Odd_Even" H 9870 296 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x26_P2.54mm_Vertical" H 10220 1721 50  0001 C CNN
+F 3 "~" H 10220 1721 50  0001 C CNN
+	1    10220 1721
+	1    0    0    -1  
+$EndComp
+Text GLabel 9670 2521 0    50   Input ~ 0
+I2C_DATA
+Text GLabel 9670 2621 0    50   Input ~ 0
+I2C_CLK
+NoConn ~ 10020 521 
+NoConn ~ 10520 521 
+NoConn ~ 10520 621 
+NoConn ~ 10020 621 
+NoConn ~ 10020 721 
+NoConn ~ 10520 721 
+NoConn ~ 10520 821 
+NoConn ~ 10020 821 
+NoConn ~ 10020 921 
+NoConn ~ 10520 921 
+NoConn ~ 10520 1021
+NoConn ~ 10020 1021
+NoConn ~ 10020 1121
+NoConn ~ 10520 1221
+NoConn ~ 10020 1221
+NoConn ~ 10020 1321
+NoConn ~ 10520 1321
+NoConn ~ 10520 1421
+NoConn ~ 10020 1421
+NoConn ~ 10020 1521
+NoConn ~ 10520 1521
+NoConn ~ 10520 1621
+NoConn ~ 10020 1621
+NoConn ~ 10020 1721
+NoConn ~ 10020 1821
+NoConn ~ 10520 1921
+NoConn ~ 10020 1921
+NoConn ~ 10020 2021
+NoConn ~ 10520 2121
+NoConn ~ 10020 2121
+NoConn ~ 10020 2221
+NoConn ~ 10520 2221
+NoConn ~ 10520 2321
+NoConn ~ 10020 2321
+NoConn ~ 10020 2421
+NoConn ~ 10520 2421
+NoConn ~ 10520 2521
+NoConn ~ 10520 2621
+NoConn ~ 10020 2821
+NoConn ~ 10520 2821
+NoConn ~ 10520 2921
+NoConn ~ 10020 2921
+NoConn ~ 10020 3021
+NoConn ~ 10520 3021
+NoConn ~ 10520 1121
+NoConn ~ 10520 1821
+NoConn ~ 10520 1721
+Text GLabel 10695 2021 2    50   Input ~ 0
+USB_Charge
+Wire Wire Line
+	9670 2521 9795 2521
+Wire Wire Line
+	9670 2621 9795 2621
+Wire Wire Line
+	10520 2021 10620 2021
+Wire Wire Line
+	9795 2521 9795 2371
+Connection ~ 9795 2521
+Wire Wire Line
+	9795 2521 10020 2521
+$Comp
+L Connector:TestPoint TP3
+U 1 1 630DC57E
+P 9795 2371
+F 0 "TP3" H 9737 2397 50  0000 R CNN
+F 1 "TestPoint" H 9737 2488 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 9995 2371 50  0001 C CNN
+F 3 "~" H 9995 2371 50  0001 C CNN
+	1    9795 2371
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9795 2621 9795 2746
+Connection ~ 9795 2621
+Wire Wire Line
+	9795 2621 10020 2621
+$Comp
+L Connector:TestPoint TP4
+U 1 1 630DC587
+P 9795 2746
+F 0 "TP4" H 10095 2846 50  0000 R CNN
+F 1 "TestPoint" H 10170 2771 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 9995 2746 50  0001 C CNN
+F 3 "~" H 9995 2746 50  0001 C CNN
+	1    9795 2746
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10620 2021 10620 1746
+Wire Wire Line
+	10620 1746 10920 1746
+Connection ~ 10620 2021
+Wire Wire Line
+	10620 2021 10695 2021
+$Comp
+L Connector:TestPoint TP5
+U 1 1 630DC591
+P 10920 1746
+F 0 "TP5" H 11220 1871 50  0000 R CNN
+F 1 "TestPoint" H 11120 1971 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 11120 1746 50  0001 C CNN
+F 3 "~" H 11120 1746 50  0001 C CNN
+	1    10920 1746
+	1    0    0    -1  
+$EndComp
+Text Notes 6955 613  0    79   ~ 0
+CSKB Connectors
+NoConn ~ 8105 563 
+NoConn ~ 8105 663 
+NoConn ~ 8105 763 
+NoConn ~ 8105 863 
+NoConn ~ 8105 1063
+NoConn ~ 8105 1163
+NoConn ~ 8105 1263
+NoConn ~ 8105 1463
+NoConn ~ 8605 1663
+NoConn ~ 8105 1663
+NoConn ~ 8105 2063
+NoConn ~ 8105 2163
+NoConn ~ 8605 2163
+NoConn ~ 8605 2263
+NoConn ~ 8105 2263
+NoConn ~ 8105 2363
+NoConn ~ 8605 2363
+NoConn ~ 8605 2463
+NoConn ~ 8105 2463
+NoConn ~ 8605 2563
+NoConn ~ 8605 2663
+NoConn ~ 8105 2763
+NoConn ~ 8605 2763
+NoConn ~ 8605 2863
+NoConn ~ 8105 2863
+NoConn ~ 8105 2963
+NoConn ~ 8605 2963
+NoConn ~ 8605 3063
+NoConn ~ 8105 3063
+NoConn ~ 8605 563 
+NoConn ~ 8605 663 
+NoConn ~ 8605 763 
+NoConn ~ 8605 863 
+NoConn ~ 8605 963 
+NoConn ~ 8605 1063
+NoConn ~ 8605 1263
+NoConn ~ 8605 1363
+NoConn ~ 8605 1463
+NoConn ~ 8105 2663
+NoConn ~ 8105 2563
+$Comp
+L Connector_Generic:Conn_02x26_Odd_Even J1
+U 1 1 630F1ED7
+P 8305 1763
+AR Path="/630F1ED7" Ref="J1"  Part="1" 
+AR Path="/602E25D3/630F1ED7" Ref="J?"  Part="1" 
+AR Path="/630CC6A1/630F1ED7" Ref="J?"  Part="1" 
+F 0 "J1" H 8255 188 50  0000 L CNN
+F 1 "Conn_02x26_Odd_Even" H 7930 313 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x26_P2.54mm_Vertical" H 8305 1763 50  0001 C CNN
+F 3 "~" H 8305 1763 50  0001 C CNN
+	1    8305 1763
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 630F1EDD
+P 8755 1763
+AR Path="/630F1EDD" Ref="#PWR0109"  Part="1" 
+AR Path="/602E25D3/630F1EDD" Ref="#PWR?"  Part="1" 
+AR Path="/630CC6A1/630F1EDD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0109" H 8755 1613 50  0001 C CNN
+F 1 "+5V" H 8755 1888 50  0000 C CNN
+F 2 "" H 8755 1763 50  0001 C CNN
+F 3 "" H 8755 1763 50  0001 C CNN
+	1    8755 1763
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0110
+U 1 1 630F1EE3
+P 8930 1863
+AR Path="/630F1EE3" Ref="#PWR0110"  Part="1" 
+AR Path="/602E25D3/630F1EE3" Ref="#PWR?"  Part="1" 
+AR Path="/630CC6A1/630F1EE3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0110" H 8930 1713 50  0001 C CNN
+F 1 "+3V3" H 8945 2036 50  0000 C CNN
+F 2 "" H 8930 1863 50  0001 C CNN
+F 3 "" H 8930 1863 50  0001 C CNN
+	1    8930 1863
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 630F1EE9
+P 7930 1763
+AR Path="/630F1EE9" Ref="#PWR0111"  Part="1" 
+AR Path="/602E25D3/630F1EE9" Ref="#PWR?"  Part="1" 
+AR Path="/630CC6A1/630F1EE9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0111" H 7930 1613 50  0001 C CNN
+F 1 "+5V" H 7980 1888 50  0000 C CNN
+F 2 "" H 7930 1763 50  0001 C CNN
+F 3 "" H 7930 1763 50  0001 C CNN
+	1    7930 1763
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0112
+U 1 1 630F1EEF
+P 7730 1863
+AR Path="/630F1EEF" Ref="#PWR0112"  Part="1" 
+AR Path="/602E25D3/630F1EEF" Ref="#PWR?"  Part="1" 
+AR Path="/630CC6A1/630F1EEF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0112" H 7730 1713 50  0001 C CNN
+F 1 "+3V3" H 7745 2036 50  0000 C CNN
+F 2 "" H 7730 1863 50  0001 C CNN
+F 3 "" H 7730 1863 50  0001 C CNN
+	1    7730 1863
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7930 1763 8105 1763
+Wire Wire Line
+	8105 1863 7730 1863
+$Comp
+L power:GND #PWR0113
+U 1 1 630F1EF7
+P 9030 1963
+AR Path="/630F1EF7" Ref="#PWR0113"  Part="1" 
+AR Path="/602E25D3/630F1EF7" Ref="#PWR?"  Part="1" 
+AR Path="/630CC6A1/630F1EF7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0113" H 9030 1713 50  0001 C CNN
+F 1 "GND" H 9035 1790 50  0000 C CNN
+F 2 "" H 9030 1963 50  0001 C CNN
+F 3 "" H 9030 1963 50  0001 C CNN
+	1    9030 1963
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8605 1963 8780 1963
+$Comp
+L power:GND #PWR0114
+U 1 1 630F1EFE
+P 7580 1963
+AR Path="/630F1EFE" Ref="#PWR0114"  Part="1" 
+AR Path="/602E25D3/630F1EFE" Ref="#PWR?"  Part="1" 
+AR Path="/630CC6A1/630F1EFE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0114" H 7580 1713 50  0001 C CNN
+F 1 "GND" H 7585 1790 50  0000 C CNN
+F 2 "" H 7580 1963 50  0001 C CNN
+F 3 "" H 7580 1963 50  0001 C CNN
+	1    7580 1963
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7580 1963 8105 1963
+NoConn ~ 8605 1163
+NoConn ~ 8105 963 
+NoConn ~ 8105 1363
+NoConn ~ 8105 1563
+NoConn ~ 8605 1563
+Wire Wire Line
+	8605 2063 8780 2063
+Wire Wire Line
+	8780 2063 8780 1963
+Connection ~ 8780 1963
+Wire Wire Line
+	8780 1963 9030 1963
+Wire Wire Line
+	8605 1763 8680 1763
+Wire Wire Line
+	8605 1863 8830 1863
+Wire Wire Line
+	8680 1763 8680 1388
+Wire Wire Line
+	8680 1388 8880 1388
+Connection ~ 8680 1763
+Wire Wire Line
+	8680 1763 8755 1763
+$Comp
+L Connector:TestPoint TP?
+U 1 1 630F1F1B
+P 8880 1388
+AR Path="/630CC6A1/630F1F1B" Ref="TP?"  Part="1" 
+AR Path="/630F1F1B" Ref="TP1"  Part="1" 
+F 0 "TP1" H 9155 1488 50  0000 R CNN
+F 1 "TestPoint" H 9055 1613 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 9080 1388 50  0001 C CNN
+F 3 "~" H 9080 1388 50  0001 C CNN
+	1    8880 1388
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8830 1863 8830 1913
+Wire Wire Line
+	8830 1913 9305 1913
+Connection ~ 8830 1863
+Wire Wire Line
+	8830 1863 8930 1863
+$Comp
+L Connector:TestPoint TP2
+U 1 1 630F3A2A
+P 9305 1913
+F 0 "TP2" H 9363 2031 50  0000 L CNN
+F 1 "TestPoint" H 9363 1940 50  0000 L CNN
+F 2 "" H 9505 1913 50  0001 C CNN
+F 3 "~" H 9505 1913 50  0001 C CNN
+	1    9305 1913
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 630F7BCF
+P 2100 646
+AR Path="/630CC6A1/630F7BCF" Ref="#PWR?"  Part="1" 
+AR Path="/630F7BCF" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 2100 496 50  0001 C CNN
+F 1 "+BATT" V 2200 671 50  0000 C CNN
+F 2 "" H 2100 646 50  0001 C CNN
+F 3 "" H 2100 646 50  0001 C CNN
+	1    2100 646 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0116
+U 1 1 630FD84D
+P 5251 800
+AR Path="/630FD84D" Ref="#PWR0116"  Part="1" 
+AR Path="/602E25D3/630FD84D" Ref="#PWR?"  Part="1" 
+AR Path="/630CC6A1/630FD84D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0116" H 5251 650 50  0001 C CNN
+F 1 "+5V" V 5178 910 50  0000 C CNN
+F 2 "" H 5251 800 50  0001 C CNN
+F 3 "" H 5251 800 50  0001 C CNN
+	1    5251 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5159 800  5251 800 
+$Comp
+L power:+3V3 #PWR0117
+U 1 1 631049DC
+P 5155 2806
+AR Path="/631049DC" Ref="#PWR0117"  Part="1" 
+AR Path="/602E25D3/631049DC" Ref="#PWR?"  Part="1" 
+AR Path="/630CC6A1/631049DC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0117" H 5155 2656 50  0001 C CNN
+F 1 "+3V3" V 5084 2927 50  0000 C CNN
+F 2 "" H 5155 2806 50  0001 C CNN
+F 3 "" H 5155 2806 50  0001 C CNN
+	1    5155 2806
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	6900 475  6900 3400
+$Comp
+L power:+BATT #PWR?
+U 1 1 63135388
+P 10020 2721
+AR Path="/630CC6A1/63135388" Ref="#PWR?"  Part="1" 
+AR Path="/63135388" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 10020 2571 50  0001 C CNN
+F 1 "+BATT" V 10067 2797 50  0000 C CNN
+F 2 "" H 10020 2721 50  0001 C CNN
+F 3 "" H 10020 2721 50  0001 C CNN
+	1    10020 2721
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 631375CD
+P 10520 2721
+AR Path="/630CC6A1/631375CD" Ref="#PWR?"  Part="1" 
+AR Path="/631375CD" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 10520 2571 50  0001 C CNN
+F 1 "+BATT" V 10480 2901 50  0000 C CNN
+F 2 "" H 10520 2721 50  0001 C CNN
+F 3 "" H 10520 2721 50  0001 C CNN
+	1    10520 2721
+	0    1    1    0   
+$EndComp
+$Sheet
+S 425  3955 500  150 
+U 630AAF93
+F0 "Sheet630AAF92" 50
+F1 "BMS.sch" 50
+$EndSheet
+$Comp
+L Device:Battery_Cell BT4
+U 1 1 630A9F43
+P 2504 1316
+F 0 "BT4" H 2622 1412 50  0000 L CNN
+F 1 "Battery_Cell" H 2622 1321 50  0000 L CNN
+F 2 "" V 2504 1376 50  0001 C CNN
+F 3 "~" V 2504 1376 50  0001 C CNN
+	1    2504 1316
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2504 1116 2503 935 
+$Comp
+L power:GND #PWR?
+U 1 1 63162FCC
+P 2090 2075
+F 0 "#PWR?" H 2090 1825 50  0001 C CNN
+F 1 "GND" H 2095 1902 50  0000 C CNN
+F 2 "" H 2090 2075 50  0001 C CNN
+F 3 "" H 2090 2075 50  0001 C CNN
+	1    2090 2075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1725 2040 2090 2040
+Connection ~ 2090 2040
+Wire Wire Line
+	2090 2040 2505 2040
+Wire Wire Line
+	2090 2075 2090 2040
+$Comp
+L Atharva-EPS-eagle-import:S-8209AXXT U?
+U 1 1 6318D1B6
+P 4281 5843
+AR Path="/6318D1B6" Ref="U?"  Part="1" 
+AR Path="/630AC655/6318D1B6" Ref="U?"  Part="1" 
+AR Path="/630AAF93/6318D1B6" Ref="U?"  Part="1" 
+F 0 "U?" H 4431 5343 59  0000 L BNN
+F 1 "S-8209AAA-T8T1U" H 4431 5243 59  0000 L BNN
+F 2 "Atharva-EPS:TSSOP8" H 4281 5843 50  0001 C CNN
+F 3 "" H 4281 5843 50  0001 C CNN
+F 4 "Ablic" H 4281 5843 59  0001 L BNN "MFR"
+F 5 "S-8209AAA-T8T1U" H 4281 5843 59  0001 L BNN "MPN"
+	1    4281 5843
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	495  2600 495  370 
+Wire Notes Line
+	495  370  5575 370 
+Wire Notes Line
+	5575 370  5575 2589
+Wire Notes Line
+	6890 490  6890 325 
+Wire Notes Line
+	6890 325  11365 325 
+Wire Notes Line
+	11365 325  11365 3400
+Wire Notes Line
+	6900 3400 11365 3400
+Text GLabel 1750 900  0    50   Input ~ 0
+BT1+
+Text GLabel 1725 1200 0    50   Input ~ 0
+BT1-
+$Comp
+L Device:Battery_Cell BT2
+U 1 1 630A78A6
+P 1725 1595
+F 0 "BT2" H 1843 1691 50  0000 L CNN
+F 1 "Battery_Cell" H 1843 1600 50  0000 L CNN
+F 2 "" V 1725 1655 50  0001 C CNN
+F 3 "~" V 1725 1655 50  0001 C CNN
+	1    1725 1595
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1725 1695 1725 1740
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 630A9AD1
+P 1750 1100
+F 0 "BT1" H 1868 1196 50  0000 L CNN
+F 1 "Battery_Cell" H 1868 1105 50  0000 L CNN
+F 2 "" V 1750 1160 50  0001 C CNN
+F 3 "~" V 1750 1160 50  0001 C CNN
+	1    1750 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1725 1395 1725 1200
+Wire Wire Line
+	1725 1200 1750 1200
+Text GLabel 1725 1395 0    50   Input ~ 0
+BT2+
+Text GLabel 1725 1695 0    50   Input ~ 0
+BT2-
+Text GLabel 1725 1740 2    50   Input ~ 0
+BT3+
+Text GLabel 1725 2040 0    50   Input ~ 0
+BT3-
+Text GLabel 2588 1086 2    50   Input ~ 0
+BT4+
+Wire Wire Line
+	2505 2040 2505 1496
+Wire Wire Line
+	2505 1496 2499 1496
+Wire Wire Line
+	2504 1416 2499 1496
+Wire Wire Line
+	2504 1116 2567 1118
+Wire Wire Line
+	2567 1118 2567 1086
+Wire Wire Line
+	2567 1086 2588 1086
+Connection ~ 2504 1116
+Connection ~ 2100 900 
+Wire Wire Line
+	2503 935  2505 900 
+Wire Wire Line
+	2100 900  2505 900 
+Wire Wire Line
+	1050 2806 3463 2806
+Wire Wire Line
+	1050 800  1050 2806
+Connection ~ 3463 2807
+Wire Wire Line
+	3463 2807 3463 2806
+Text GLabel 2549 1419 2    50   Input ~ 0
+BT4-
+Wire Wire Line
+	2504 1420 2549 1420
+Wire Wire Line
+	2549 1420 2549 1419
+Connection ~ 2504 1420
+Wire Notes Line
+	494  2454 498  2454
+Wire Notes Line
+	494  3608 5595 3608
+Wire Notes Line
+	494  2454 494  3608
+Wire Notes Line
+	5592 3609 5592 2574
+Wire Notes Line
+	5592 2574 5572 2574
+Wire Wire Line
+	4281 5344 4281 5343
+Wire Wire Line
+	4281 5129 5438 5129
+Connection ~ 4281 5343
+Wire Wire Line
+	4281 5343 4281 5129
+Wire Wire Line
+	4281 6343 4281 6534
+Wire Wire Line
+	4281 6534 4790 6534
+Wire Wire Line
+	4161 7891 5465 7891
+Wire Wire Line
+	4161 9377 5517 9377
+$Comp
+L Atharva-EPS-eagle-import:S-8209AXXT U?
+U 1 1 6329DA02
+P 4277 11161
+AR Path="/6329DA02" Ref="U?"  Part="1" 
+AR Path="/630AC655/6329DA02" Ref="U?"  Part="1" 
+AR Path="/630AAF93/6329DA02" Ref="U?"  Part="1" 
+F 0 "U?" H 4427 10661 59  0000 L BNN
+F 1 "S-8209AAA-T8T1U" H 4427 10561 59  0000 L BNN
+F 2 "Atharva-EPS:TSSOP8" H 4277 11161 50  0001 C CNN
+F 3 "" H 4277 11161 50  0001 C CNN
+F 4 "Ablic" H 4277 11161 59  0001 L BNN "MFR"
+F 5 "S-8209AAA-T8T1U" H 4277 11161 59  0001 L BNN "MPN"
+	1    4277 11161
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4277 10662 4277 10661
+Wire Wire Line
+	4277 10358 5573 10358
+Connection ~ 4277 10661
+Wire Wire Line
+	4277 10661 4277 10358
+Wire Wire Line
+	4277 11659 4277 11661
+Wire Wire Line
+	4277 11891 5563 11891
+Connection ~ 4277 11661
+Wire Wire Line
+	4277 11661 4277 11891
+Text GLabel 5458 5129 2    50   Input ~ 0
+BT1+
+Text GLabel 5497 6534 2    50   Input ~ 0
+BT1-
+Text GLabel 5465 7891 2    50   Input ~ 0
+BT2+
+Text GLabel 5517 9377 2    50   Input ~ 0
+BT2-
+Text GLabel 5573 10358 2    50   Input ~ 0
+BT3+
+Text GLabel 5613 11891 2    50   Input ~ 0
+BT3-
+Wire Wire Line
+	3682 5642 3681 5643
+Wire Wire Line
+	2774 5642 2774 6560
+Wire Wire Line
+	2772 7822 2774 7822
+Wire Wire Line
+	4759 7822 4759 8417
+Wire Wire Line
+	4759 8417 4762 8417
+Connection ~ 4759 7822
+Wire Wire Line
+	4759 7822 4760 7822
+Wire Wire Line
+	4762 8417 4762 8476
+Wire Wire Line
+	4162 9176 4161 9377
+Wire Wire Line
+	4162 8176 4161 7891
+Wire Wire Line
+	4161 8170 4162 8176
+Connection ~ 4162 8176
+$Comp
+L Atharva-EPS-eagle-import:S-8209AXXT U?
+U 1 1 631BB836
+P 4162 8676
+AR Path="/631BB836" Ref="U?"  Part="1" 
+AR Path="/630AC655/631BB836" Ref="U?"  Part="1" 
+AR Path="/630AAF93/631BB836" Ref="U?"  Part="1" 
+F 0 "U?" H 4312 8176 59  0000 L BNN
+F 1 "S-8209AAA-T8T1U" H 4312 8076 59  0000 L BNN
+F 2 "Atharva-EPS:TSSOP8" H 4162 8676 50  0001 C CNN
+F 3 "" H 4162 8676 50  0001 C CNN
+F 4 "Ablic" H 4162 8676 59  0001 L BNN "MFR"
+F 5 "S-8209AAA-T8T1U" H 4162 8676 59  0001 L BNN "MPN"
+	1    4162 8676
+	1    0    0    -1  
+$EndComp
+Connection ~ 3681 5643
+Wire Wire Line
+	3681 5643 2774 5642
+Connection ~ 2774 7822
+Wire Wire Line
+	2774 7822 4759 7822
+Wire Wire Line
+	4760 8676 4762 8676
+Connection ~ 4762 8676
+Wire Wire Line
+	4762 8676 4806 8676
+Wire Wire Line
+	4806 8410 4918 8410
+Wire Wire Line
+	4918 8410 4918 7158
+Wire Wire Line
+	4918 7158 3288 7158
+Wire Wire Line
+	3288 7158 3288 6804
+Wire Wire Line
+	3288 5842 3681 5843
+Wire Wire Line
+	3692 5842 3692 5844
+Wire Wire Line
+	3692 5844 3660 5844
+Wire Wire Line
+	4806 8410 4806 8676
+Connection ~ 3681 5843
+Wire Wire Line
+	3681 5843 3692 5842
+$Comp
+L Device:R R?
+U 1 1 63326D5A
+P 2774 6710
+F 0 "R?" H 2844 6756 50  0000 L CNN
+F 1 "1k" H 2844 6665 50  0000 L CNN
+F 2 "" V 2704 6710 50  0001 C CNN
+F 3 "~" H 2774 6710 50  0001 C CNN
+	1    2774 6710
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2774 6860 2774 7822
+$Comp
+L Device:R R?
+U 1 1 633276F0
+P 3288 6654
+F 0 "R?" H 3358 6700 50  0000 L CNN
+F 1 "1k" H 3358 6609 50  0000 L CNN
+F 2 "" V 3218 6654 50  0001 C CNN
+F 3 "~" H 3288 6654 50  0001 C CNN
+	1    3288 6654
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3288 6504 3288 5842
+Wire Wire Line
+	3562 8476 3196 8476
+Wire Wire Line
+	3196 8476 3196 9082
+Wire Wire Line
+	4864 10961 4877 10961
+Wire Wire Line
+	4915 10961 4915 10182
+Wire Wire Line
+	3196 10182 4915 10182
+Connection ~ 4877 10961
+Wire Wire Line
+	4877 10961 4915 10961
+Wire Wire Line
+	3374 10025 5276 10025
+Wire Wire Line
+	5276 10025 5276 11161
+Wire Wire Line
+	5276 11161 4877 11161
+$Comp
+L Device:R R?
+U 1 1 63352292
+P 3196 9232
+F 0 "R?" H 3266 9278 50  0000 L CNN
+F 1 "1k" H 3266 9187 50  0000 L CNN
+F 2 "" V 3126 9232 50  0001 C CNN
+F 3 "~" H 3196 9232 50  0001 C CNN
+	1    3196 9232
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3196 9382 3196 10182
+Wire Wire Line
+	3374 8676 3374 9474
+$Comp
+L Device:R R?
+U 1 1 6335A0BF
+P 3374 9624
+F 0 "R?" H 3444 9670 50  0000 L CNN
+F 1 "1k" H 3444 9579 50  0000 L CNN
+F 2 "" V 3304 9624 50  0001 C CNN
+F 3 "~" H 3374 9624 50  0001 C CNN
+	1    3374 9624
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3374 8676 3562 8676
+Wire Wire Line
+	3374 9774 3374 10025
+Connection ~ 3562 8676
+Wire Wire Line
+	3562 8676 3570 8676
+Wire Wire Line
+	5438 5129 5438 4297
+Connection ~ 5438 5129
+Wire Wire Line
+	5438 5129 5458 5129
+Wire Wire Line
+	5563 11891 5563 12632
+Wire Wire Line
+	5741 4297 5741 4296
+Wire Wire Line
+	1692 4297 5438 4297
+Connection ~ 5438 4297
+Wire Wire Line
+	5438 4297 5741 4297
+Wire Wire Line
+	1950 12634 5563 12632
+Connection ~ 5563 12632
+Wire Wire Line
+	5563 12632 5720 12634
+Connection ~ 5563 11891
+Wire Wire Line
+	5563 11891 5613 11891
+Text GLabel 5741 4296 2    50   Input ~ 0
+BT4+
+Text GLabel 5720 12634 2    50   Input ~ 0
+BT4-
+Wire Wire Line
+	3685 10961 3677 10961
+Wire Wire Line
+	3570 10961 3570 11564
+Connection ~ 3677 10961
+Wire Wire Line
+	3677 10961 3570 10961
+Connection ~ 3570 12633
+$Comp
+L Device:R R?
+U 1 1 633CE483
+P 3570 11714
+F 0 "R?" H 3640 11760 50  0000 L CNN
+F 1 "1k" H 3640 11669 50  0000 L CNN
+F 2 "" V 3500 11714 50  0001 C CNN
+F 3 "~" H 3570 11714 50  0001 C CNN
+	1    3570 11714
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3570 11864 3570 12633
+Wire Wire Line
+	3681 6041 3681 6043
+Connection ~ 4790 6534
+Wire Wire Line
+	4790 6534 5497 6534
+Connection ~ 3681 6043
+$Comp
+L Device:C C?
+U 1 1 6340E75A
+P 3960 6711
+F 0 "C?" V 3708 6711 50  0000 C CNN
+F 1 "0.01uF" V 3799 6711 50  0000 C CNN
+F 2 "" H 3998 6561 50  0001 C CNN
+F 3 "~" H 3960 6711 50  0001 C CNN
+	1    3960 6711
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3681 6711 3810 6711
+Connection ~ 3810 6711
+Wire Wire Line
+	3810 6711 3819 6711
+Wire Wire Line
+	4107 6711 4110 6711
+Wire Wire Line
+	4790 6534 4790 6711
+Connection ~ 4110 6711
+Wire Wire Line
+	4110 6711 4790 6711
+Wire Wire Line
+	3681 6043 3681 6711
+$EndSCHEMATC
