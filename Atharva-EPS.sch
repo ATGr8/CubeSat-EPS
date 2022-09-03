@@ -1518,4 +1518,16 @@ F 3 "~" H 4084 12820 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4234 12820 4272 12820
+Wire Notes Line
+	1168 4438 8530 4438
+Wire Notes Line
+	8530 4438 8530 14833
+Wire Notes Line
+	8530 14833 1165 14833
+Wire Notes Line
+	1165 14833 1165 4416
+Text Notes 1329 4673 0    106  ~ 0
+Battery Management System (BMS)
+Text Notes 4108 13647 0    106  ~ 0
+This should be a DFET\n\n
 $EndSCHEMATC
