@@ -123,12 +123,12 @@ $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 630B4A78
-P 3463 3157
-F 0 "#PWR0104" H 3463 2907 50  0001 C CNN
-F 1 "GND" H 3468 2984 50  0000 C CNN
-F 2 "" H 3463 3157 50  0001 C CNN
-F 3 "" H 3463 3157 50  0001 C CNN
-	1    3463 3157
+P 3463 3156
+F 0 "#PWR0104" H 3463 2906 50  0001 C CNN
+F 1 "GND" H 3468 2983 50  0000 C CNN
+F 2 "" H 3463 3156 50  0001 C CNN
+F 3 "" H 3463 3156 50  0001 C CNN
+	1    3463 3156
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -617,19 +617,6 @@ F0 "Sheet630AAF92" 50
 F1 "BMS.sch" 50
 $EndSheet
 $Comp
-L Device:Battery_Cell BT4
-U 1 1 630A9F43
-P 2504 1316
-F 0 "BT4" H 2622 1412 50  0000 L CNN
-F 1 "Battery_Cell" H 2622 1321 50  0000 L CNN
-F 2 "" V 2504 1376 50  0001 C CNN
-F 3 "~" V 2504 1376 50  0001 C CNN
-	1    2504 1316
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2504 1116 2503 935 
-$Comp
 L power:GND #PWR?
 U 1 1 63162FCC
 P 2090 2075
@@ -652,7 +639,7 @@ Wire Notes Line
 Wire Notes Line
 	495  370  5575 370 
 Wire Notes Line
-	5575 370  5575 2589
+	5561 359  5561 2578
 Wire Notes Line
 	6890 490  6890 325 
 Wire Notes Line
@@ -661,7 +648,7 @@ Wire Notes Line
 	11365 325  11365 3400
 Wire Notes Line
 	6900 3400 11365 3400
-Text GLabel 1750 900  0    50   Input ~ 0
+Text GLabel 1751 901  0    50   Input ~ 0
 BT1+
 Text GLabel 1725 1200 0    50   Input ~ 0
 BT1-
@@ -691,8 +678,6 @@ F 3 "~" V 1750 1160 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1725 1395 1725 1200
-Wire Wire Line
-	1725 1200 1750 1200
 Text GLabel 1725 1395 0    50   Input ~ 0
 BT2+
 Text GLabel 1725 1695 0    50   Input ~ 0
@@ -701,33 +686,15 @@ Text GLabel 1725 1740 2    50   Input ~ 0
 BT3+
 Text GLabel 1725 2040 0    50   Input ~ 0
 BT3-
-Text GLabel 2588 1086 2    50   Input ~ 0
+Text GLabel 2505 900  2    50   Input ~ 0
 BT4+
 Wire Wire Line
 	2505 2040 2505 1496
-Wire Wire Line
-	2505 1496 2499 1496
-Wire Wire Line
-	2504 1416 2499 1496
-Wire Wire Line
-	2504 1116 2567 1118
-Wire Wire Line
-	2567 1118 2567 1086
-Wire Wire Line
-	2567 1086 2588 1086
-Connection ~ 2504 1116
 Connection ~ 2100 900 
 Wire Wire Line
-	2503 935  2505 900 
-Wire Wire Line
-	2100 900  2505 900 
-Text GLabel 2549 1419 2    50   Input ~ 0
+	2100 900  2503 900 
+Text GLabel 2505 2028 2    50   Input ~ 0
 BT4-
-Wire Wire Line
-	2504 1420 2549 1420
-Wire Wire Line
-	2549 1420 2549 1419
-Connection ~ 2504 1420
 Wire Notes Line
 	494  2454 498  2454
 Wire Notes Line
@@ -832,9 +799,6 @@ $EndComp
 Connection ~ 4481 6193
 Wire Wire Line
 	4481 6193 3574 6192
-Connection ~ 3574 8372
-Wire Wire Line
-	3574 8372 5559 8372
 Wire Wire Line
 	5560 9226 5562 9226
 Connection ~ 5562 9226
@@ -1120,23 +1084,10 @@ Wire Wire Line
 	3427 5359 3427 5320
 Wire Wire Line
 	5559 9426 5562 9426
-$Comp
-L Atharva-EPS-eagle-import:N-MOSFET-SOT-23-3 Q?
-U 1 1 631DACAB
-P 5830 9338
-F 0 "Q?" H 6028 9391 59  0000 L CNN
-F 1 "N-MOSFET-SOT-23-3" H 6028 9286 59  0000 L CNN
-F 2 "" H 5830 9338 50  0001 C CNN
-F 3 "" H 5830 9338 50  0001 C CNN
-	1    5830 9338
-	1    0    0    -1  
-$EndComp
-Connection ~ 5730 9438
 Wire Wire Line
 	5730 9438 5733 9427
 Wire Wire Line
 	5932 9129 5930 9138
-Connection ~ 5930 9138
 Wire Wire Line
 	5930 9138 5932 8583
 Wire Wire Line
@@ -1390,7 +1341,7 @@ Connection ~ 4170 13192
 Wire Wire Line
 	4170 13192 4272 13192
 Wire Wire Line
-	4370 13192 6520 13192
+	4370 13192 4826 13192
 Wire Wire Line
 	6520 13192 6520 13184
 Connection ~ 4370 13192
@@ -2074,7 +2025,7 @@ F 3 "" H 15302 5411 50  0001 C CNN
 $EndComp
 Text GLabel 11088 6168 0    50   Input ~ 0
 A
-Text GLabel 11093 7304 0    50   Input ~ 0
+Text GLabel 11093 7308 0    50   Input ~ 0
 B
 Wire Wire Line
 	11088 6168 11088 4291
@@ -2174,4 +2125,84 @@ Wire Notes Line
 	20232 3698 9836 3698
 Text Notes 10247 4051 0    106  ~ 0
 Fuel Guage \n
+Connection ~ 5930 9138
+$Comp
+L Atharva-EPS-eagle-import:N-MOSFET-SOT-23-3 Q?
+U 1 1 631DACAB
+P 5830 9338
+F 0 "Q?" H 6028 9391 59  0000 L CNN
+F 1 "N-MOSFET-SOT-23-3" H 6028 9286 59  0000 L CNN
+F 2 "" H 5830 9338 50  0001 C CNN
+F 3 "" H 5830 9338 50  0001 C CNN
+	1    5830 9338
+	1    0    0    -1  
+$EndComp
+Connection ~ 5730 9438
+NoConn ~ 4362 9426
+NoConn ~ 4477 11911
+Wire Wire Line
+	4478 11711 4477 11711
+Wire Wire Line
+	4405 11711 4405 12135
+Connection ~ 4477 11711
+Wire Wire Line
+	4477 11711 4405 11711
+Wire Wire Line
+	4826 12135 4826 12563
+Wire Wire Line
+	4405 12135 4826 12135
+Connection ~ 4826 13192
+Wire Wire Line
+	4826 13192 6520 13192
+$Comp
+L Device:R R?
+U 1 1 63452744
+P 4826 12713
+F 0 "R?" H 4896 12759 50  0000 L CNN
+F 1 "1k" H 4896 12668 50  0000 L CNN
+F 2 "" V 4756 12713 50  0001 C CNN
+F 3 "~" H 4826 12713 50  0001 C CNN
+	1    4826 12713
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4826 12863 4826 13192
+Wire Wire Line
+	1751 901  1768 901 
+Wire Wire Line
+	1768 901  1768 932 
+Wire Wire Line
+	1768 932  2048 932 
+Wire Wire Line
+	2048 932  2048 947 
+Wire Wire Line
+	2048 947  2408 943 
+Wire Wire Line
+	1725 1200 1750 1200
+Wire Wire Line
+	2503 900  2503 1496
+Wire Wire Line
+	2503 1496 2505 1496
+Connection ~ 2503 900 
+Wire Wire Line
+	2503 900  2505 900 
+$Comp
+L Device:Battery_Cell BT4
+U 1 1 630A9F43
+P 2408 1143
+F 0 "BT4" H 2526 1239 50  0000 L CNN
+F 1 "Battery_Cell" H 2526 1148 50  0000 L CNN
+F 2 "" V 2408 1203 50  0001 C CNN
+F 3 "~" V 2408 1203 50  0001 C CNN
+	1    2408 1143
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2408 1243 1750 1243
+Wire Wire Line
+	1750 1243 1750 1200
+Connection ~ 1750 1200
+Connection ~ 3574 8372
+Wire Wire Line
+	3574 8372 5559 8372
 $EndSCHEMATC
