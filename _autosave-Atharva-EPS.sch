@@ -509,7 +509,7 @@ Wire Wire Line
 Wire Wire Line
 	21000 8000 21050 8000
 Wire Wire Line
-	20550 8400 21550 8400
+	20550 8400 20750 8400
 Wire Wire Line
 	20550 8500 20800 8500
 Wire Wire Line
@@ -545,13 +545,13 @@ F 1 "1uF" V 20800 8300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 20788 8100 50  0001 C CNN
 F 3 "~" H 20750 8250 50  0001 C CNN
 	1    20750 8250
-	0    -1   -1   0   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	20600 8250 20600 8100
 Connection ~ 20600 8100
 Wire Wire Line
-	20600 8100 21000 8100
+	20600 8100 20750 8100
 Wire Wire Line
 	20550 8300 20900 8300
 Wire Wire Line
@@ -3904,4 +3904,10 @@ Wire Notes Line
 	9850 500  9850 4700
 Wire Notes Line
 	7150 500  7150 4700
+Connection ~ 20750 8100
+Wire Wire Line
+	20750 8100 21000 8100
+Connection ~ 20750 8400
+Wire Wire Line
+	20750 8400 21550 8400
 $EndSCHEMATC
