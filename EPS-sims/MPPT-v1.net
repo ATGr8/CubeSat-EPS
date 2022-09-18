@@ -1,0 +1,32 @@
+* C:\Users\cb199\OneDrive\Desktop\EPS-sims\MPPT-v1.asc
+XU1 N002 N006 N002 NC_01 NC_02 0 N009 NC_03 N008 N005 N007 N004 0 LT3652
+R1 N006 0 100k
+R2 N002 N006 450k
+R4 N009 0 459k
+R5 N008 N009 542k
+C2 N002 0 10µ
+D1 N003 N002 D
+C3 N004 N005 1µ
+D2 0 N004 D
+D4 N008 vload D
+L1 N005 N004 10µ
+R3 N008 N005 0.05
+C4 N008 0 10µ
+D3 N008 N007 D
+V1 N003 0 PULSE(0 12 1m 1n 1n 11m 50) Rser=1
+V2 0 0 PULSE(5 8 2m 1n 1n 2m 4m)
+XU2 MP_04 Vreg5 MP_05 N001 0 MP_06 MP_07 vload MP_08 vload LT3012
+C1 vload 0 1µ
+R6 Vreg5 N001 750k
+R7 N001 0 250k
+C5 Vreg5 0 3.3µ
+R8 Vreg5 0 100k
+D5 N002 vload D
+C6 0 N008 10µ
+.model D D
+.lib C:\Users\cb199\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 1s 0s
+.lib LT3012.lib
+.lib LT3652.sub
+.backanno
+.end
